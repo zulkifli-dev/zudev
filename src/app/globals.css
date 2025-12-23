@@ -13,8 +13,13 @@ body {
   background-color: black;
   color: white;
   width: 100vw;
-  height: 100vh;
-  overflow: hidden;
+}
+
+@media (min-width: 1024px) {
+  body {
+    height: 100vh;
+    overflow: hidden;
+  }
 }
 
 .hide-scrollbar {
