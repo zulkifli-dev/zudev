@@ -19,13 +19,11 @@ const frontendTools: ToolItem[] = [
   { name: "React", icon: "/image/toolkit/react.png" },
   { name: "Next.js", icon: "/image/toolkit/next-js.png" },
   { name: "Tailwind", icon: "/image/toolkit/tailwind.png" },
-  { name: "Bootstrap", icon: "/image/toolkit/boostrap.png" },
   { name: "Redux", icon: "/image/toolkit/redux.png" },
   { name: "Axios", icon: "/image/toolkit/axios.png" },
 ];
 
 const backendTools: ToolItem[] = [
-  { name: "PHP", icon: "/image/toolkit/php.png" },
   { name: "Laravel", icon: "/image/toolkit/laravel.png" },
   { name: "Express.js", icon: "/image/toolkit/express-js.png" },
   { name: "Prisma", icon: "/image/toolkit/prisma.png" },
