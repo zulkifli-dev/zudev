@@ -8,7 +8,7 @@ function SectionService() {
       id="service"
       className="bg-dasar rounded-2xl px-5 py-4 flex flex-col gap-3 z-10"
     >
-      <div className="flex justify-between items-start mb-4 py-4 sticky -top-1  bg-dasar">
+      <div className="flex justify-between items-start mb-4 py-4 sticky -top-1  bg-dasar z-10">
         <HeadingSection>Layanan Saya</HeadingSection>
       </div>
       <div className="grid md:grid-cols-2 gap-3 order-2 md:order-1">

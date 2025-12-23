@@ -42,7 +42,7 @@ const devopsTools: ToolItem[] = [
   { name: "Figma", icon: "/image/toolkit/figma.png" },
 ];
 
-export const experiences: IExperience[] = [
+const experiences: IExperience[] = [
   {
     name: "Web Sistem Pengambilan Keputusan (SPK) Pemberian Pinjaman Kredit (KNN)",
     date: "2020",
@@ -188,6 +188,7 @@ export const experiences: IExperience[] = [
     whatIDid: [
       "Membangun sistem kasir (POS) untuk transaksi penjualan di toko offline",
       "Memimpin tim kecil (2 programmer) dalam merancang arsitektur sistem onlineshop terintegrasi POS untuk sinkronisasi inventaris real-time.",
+      "Mengintegrasikan stok dan data penjualan antara toko online dan offline",
       "Menyediakan dashboard admin untuk pengelolaan produk, pesanan, dan laporan penjualan",
     ],
     impact:
