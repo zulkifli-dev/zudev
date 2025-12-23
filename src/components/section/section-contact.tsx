@@ -47,7 +47,7 @@ function SectionContact() {
               WhatsApp
             </Button>
             <Button
-              href="mailto:your-email@example.com"
+              href="mailto:kifliaapp@gmail.com"
               target="_blank"
               className="px-8 py-3 text-lg flex items-center gap-3 hover:scale-105 transition-transform bg-none bg-white/10 hover:bg-white/20"
             >
