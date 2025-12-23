@@ -12,19 +12,19 @@ function SectionService() {
         <HeadingSection>Layanan Saya</HeadingSection>
       </div>
       <div className="grid md:grid-cols-2 gap-3 order-2 md:order-1">
-        <div className="bg-gradient-to-bl from-blue-1/50 to-blue-2/50 rounded-lg p-5 flex flex-col gap-2 items-center">
+        <div className="bg-white/5 backdrop-blur-md border border-blue-2/30 rounded-2xl p-5 flex flex-col gap-2 items-center shadow-xl transition-all hover:bg-white/10 hover:border-blue-2/50">
           <Image alt="web" src={"/svg/web.svg"} width={64} height={64} />
-          <h4 className="text-xl font-semibold">Web Development</h4>
-          <ul className="list-disc text-white w-full px-4">
+          <h4 className="text-xl font-semibold text-blue-2">Web Development</h4>
+          <ul className="list-disc text-gray-300 w-full px-4">
             <li>Website statis dan dinamis</li>
             <li>Landing page & website e-commerce</li>
             <li>Responsive design dan SEO-friendly.</li>
           </ul>
         </div>
-        <div className="bg-gradient-to-bl from-blue-1/50 to-blue-2/50 rounded-lg p-5 flex flex-col gap-2 items-center">
+        <div className="bg-white/5 backdrop-blur-md border border-blue-2/30 rounded-2xl p-5 flex flex-col gap-2 items-center shadow-xl transition-all hover:bg-white/10 hover:border-blue-2/50">
           <Image alt="app" src={"/svg/app.svg"} width={64} height={64} />
-          <h4 className="text-xl font-semibold">App Development</h4>
-          <ul className="list-disc text-white w-full px-4">
+          <h4 className="text-xl font-semibold text-blue-2">App Development</h4>
+          <ul className="list-disc text-gray-300 w-full px-4">
             <li>Aplikasi native dan hybrid.</li>
             <li>Aplikasi Android dan iOS.</li>
             <li>Aplikasi desktop</li>

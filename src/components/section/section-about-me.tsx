@@ -16,18 +16,20 @@ function SectionAboutMe() {
         <Button className="min-w-[120px]">Download CV</Button>
       </div>
       <p className="text-white text-base font-light">
-        Saya seorang Full Stack Developer berpengalaman dalam pengembangan
-        website dan aplikasi mobile menggunakan React, Node.js, dan React
-        Native.
+        Saya adalah Full Stack Developer yang berfokus pada pengembangan sistem
+        bisnis dan aplikasi berskala nyata, meliputi website dan aplikasi mobile
+        menggunakan React, Node.js, dan React Native.
       </p>
       <p className="text-white text-base font-light">
-        Sejak 2018, saya telah mengerjakan berbagai proyek digital mulai dari
-        sistem ERP, aplikasi akademik, hingga platform pembayaran digital.
+        Saya memiliki pengalaman bekerja secara full-time di perusahaan
+        sekaligus menangani berbagai project freelance dan kontrak, dengan fokus
+        pada pengembangan sistem bisnis yang digunakan langsung dalam
+        operasional.
       </p>
       <p className="text-white text-base font-light">
-        Lulusan Teknik Informatika – Universitas Dipanegara, saya memiliki
-        semangat belajar tinggi dan percaya bahwa solusi terbaik lahir dari
-        pemahaman kebutuhan pengguna.
+        Sebagai lulusan Teknik Informatika Universitas Dipanegara, saya
+        mengutamakan pemahaman kebutuhan pengguna dan stabilitas sistem dalam
+        setiap solusi yang saya bangun.
       </p>
       <SubHeadingSection>Riwayat Pendidikan</SubHeadingSection>
       <div
@@ -38,16 +40,16 @@ function SectionAboutMe() {
         <CardIDo
           name="S1 - Universitas Dipanegara Makassar"
           date="2017 - 2022"
-          desc="Teknik Informatika"
-          fiture={[]}
+          role="Teknik Informatika"
           tech={[]}
+          professional={false}
         />
         <CardIDo
           name="SMK Negeri 1 Rangas Mamuju"
           date="2015 - 2017"
-          desc="Multimedia"
-          fiture={[]}
+          role="Multimedia"
           tech={[]}
+          professional={false}
         />
       </div>
     </section>

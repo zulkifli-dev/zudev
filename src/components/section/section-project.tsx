@@ -6,496 +6,444 @@ import CardIDo, { IExperience, Tech } from "../card/card-i-do";
 import SubHeadingSection from "../heading/sub-heading-section";
 import HeadingSection from "../heading/heading-section";
 
-const experiences: IExperience[] = [
+interface ToolItem {
+  name: string;
+  icon: string;
+}
+
+const frontendTools: ToolItem[] = [
+  { name: "HTML", icon: "/image/toolkit/html.png" },
+  { name: "CSS", icon: "/image/toolkit/css.png" },
+  { name: "JavaScript", icon: "/image/toolkit/javascript.png" },
+  { name: "TypeScript", icon: "/image/toolkit/typescript.png" },
+  { name: "React", icon: "/image/toolkit/react.png" },
+  { name: "Next.js", icon: "/image/toolkit/next-js.png" },
+  { name: "Tailwind", icon: "/image/toolkit/tailwind.png" },
+  { name: "Bootstrap", icon: "/image/toolkit/boostrap.png" },
+  { name: "Redux", icon: "/image/toolkit/redux.png" },
+  { name: "Axios", icon: "/image/toolkit/axios.png" },
+];
+
+const backendTools: ToolItem[] = [
+  { name: "PHP", icon: "/image/toolkit/php.png" },
+  { name: "Laravel", icon: "/image/toolkit/laravel.png" },
+  { name: "Express.js", icon: "/image/toolkit/express-js.png" },
+  { name: "Prisma", icon: "/image/toolkit/prisma.png" },
+  { name: "MySQL", icon: "/image/toolkit/mysql.png" },
+];
+
+const mobileTools: ToolItem[] = [
+  { name: "Expo", icon: "/image/toolkit/expo.png" },
+];
+
+const devopsTools: ToolItem[] = [
+  { name: "Git", icon: "/image/toolkit/git.png" },
+  { name: "Docker", icon: "/image/toolkit/docker.png" },
+  { name: "Figma", icon: "/image/toolkit/figma.png" },
+];
+
+export const experiences: IExperience[] = [
   {
-    name: "Web Sistem Pengambilan Keputusan (SPK) pemberian pinjaman kredit menggunakan metode KNN",
+    name: "Web Sistem Pengambilan Keputusan (SPK) Pemberian Pinjaman Kredit (KNN)",
     date: "2020",
-    tech: [Tech.mysql, Tech.php, Tech.bootstrap],
-    desc: "Freelance Web Developer",
-    fiture: ["Data Mahasiswa", "Data Kriteria", "Data Alternatif", "SPK"],
+    professional: false,
+    pin: false,
+    tech: [Tech.php, Tech.mysql, Tech.bootstrap],
     description:
-      "Aplikasi web untuk membantu pengambilan keputusan pemberian pinjaman kredit menggunakan metode KNN, agar proses penilaian calon debitur lebih objektif dan cepat.",
+      "Aplikasi pendukung keputusan untuk membantu penilaian kelayakan kredit secara objektif berbasis data menggunakan metode KNN.",
   },
   {
     name: "Web Sistem Pengembalian Nomor Antrian",
     date: "2020",
-    tech: [Tech.mysql, Tech.codeigniter, Tech.php, Tech.bootstrap],
-    desc: "Freelance Web Developer",
-    fiture: ["Ambil Antrian", "Suara Panggilan Nomor Antrian"],
+    professional: false,
+    pin: false,
+    // tech: ["PHP", "CodeIgniter", "MySQL", "Bootstrap"],
+    tech: [Tech.php, Tech.codeigniter, Tech.mysql, Tech.bootstrap],
     description:
-      "Sistem antrian otomatis yang memudahkan pelanggan mengambil nomor antrian dan mendapatkan panggilan suara secara real-time.",
+      "Sistem antrian digital untuk mempermudah pengambilan dan pemanggilan nomor antrian secara otomatis.",
   },
   {
-    name: "Web pemesanan tiket kereta bus online",
+    name: "Web Pemesanan Tiket Bus & Kereta Online",
     date: "2021",
-    tech: [
-      Tech.mysql,
-      Tech.codeigniter,
-      Tech.php,
-      Tech.midtrans,
-      Tech.bootstrap,
-    ],
-    desc: "Freelance Web Developer",
-    fiture: ["Pembayaran Payment Gateway", "Booking Tiket"],
+    professional: false,
+    pin: false,
+    tech: [Tech.php, Tech.codeigniter, Tech.mysql, Tech.midtrans],
     description:
-      "Platform pemesanan tiket transportasi online dengan integrasi payment gateway untuk transaksi aman dan cepat.",
+      "Platform pemesanan tiket transportasi online dengan sistem pembayaran digital terintegrasi.",
   },
   {
-    name: "Web Sistem Pengambilan Keputusan (SPK) karyawan berprestasi menggunakan metode DEMATEL",
+    name: "Web SPK Karyawan Berprestasi (DEMATEL)",
     date: "2022",
-    tech: [Tech.mysql, Tech.php, Tech.bootstrap, Tech.codeigniter],
-    desc: "Freelance Web Developer",
-    fiture: ["Data Karyawan", "Data Kriteria", "Data Alternatif", "SPK"],
+    professional: false,
+    pin: false,
+    tech: [Tech.php, Tech.codeigniter, Tech.mysql],
     description:
-      "Aplikasi SPK untuk menentukan karyawan berprestasi menggunakan metode DEMATEL, membantu manajemen dalam evaluasi kinerja secara terukur.",
+      "Sistem evaluasi kinerja karyawan berbasis metode DEMATEL untuk mendukung pengambilan keputusan manajemen.",
   },
   {
     name: "Web Profil Organisasi Kemahasiswaan",
     date: "2022",
-    tech: [Tech.mysql, Tech.bootstrap, Tech.codeigniter, Tech.php],
-    desc: "Freelance Web Developer",
-    fiture: [
-      "Data Profil Organisasi",
-      "Data Pendaftaran",
-      "Data Pengurus",
-      "Data Program Kerja",
-      "Blog",
-      "Data Kegiatan",
-      "dan Lainnya",
-    ],
+    professional: false,
+    pin: false,
+    tech: [Tech.php, Tech.codeigniter, Tech.mysql, Tech.bootstrap],
     description:
-      "Website profil organisasi mahasiswa untuk menampilkan struktur kepengurusan, kegiatan, dan pendaftaran anggota secara digital.",
+      "Website informasi organisasi untuk menampilkan kegiatan, kepengurusan, dan pendaftaran anggota secara digital.",
   },
   {
-    name: "Aplikasi absensi otomatis pendeteksi wajah untuk kuliah daring (zoom meeting) berbasis Desktop",
+    name: "Aplikasi Absensi Otomatis Pendeteksi Wajah (Desktop)",
     date: "2022",
-    tech: [Tech.mysql, Tech.python, Tech.opencv],
-    desc: "Aplikasi Tugas Akhir (Skripsi)",
-    fiture: ["Data Mahasiswa", "Data Kehadiran", "Absensi Otomatis"],
+    professional: false,
+    pin: false,
+    tech: [Tech.python, Tech.opencv, Tech.mysql],
     description:
-      "Aplikasi desktop untuk mendeteksi dan merekam kehadiran mahasiswa secara otomatis menggunakan deteksi wajah berbasis Haarcascade.",
+      "Aplikasi desktop absensi otomatis berbasis pengenalan wajah untuk meningkatkan akurasi kehadiran kuliah daring.",
   },
   {
-    name: "IOT - Sistem Hitung Total Belanja Pada Troli",
+    name: "IoT Smart Shopping Trolley",
     date: "2022",
-    tech: [Tech.arduino, Tech.mit, Tech.react, Tech.firebase],
-    desc: "Freelance App IOT",
-    fiture: [
-      "Scanner Barcode cek harga",
-      "Tambahkan dan Hapus barang dari keranjang",
-      "Aplikasi Android untuk User",
-      "Web Dashboard Admin",
-    ],
+    professional: false,
+    pin: false,
+    tech: [Tech.arduino, Tech.react, Tech.firebase],
     description:
-      "Sistem IoT yang menghitung total belanja otomatis di troli supermarket dengan integrasi barcode scanner dan aplikasi Android.",
+      "Sistem troli belanja pintar yang menghitung total belanja secara otomatis menggunakan barcode dan aplikasi mobile.",
   },
   {
-    name: "Aplikasi Mobile PPOB (Payment Point Online Bank) Multi Layanan",
+    name: "Aplikasi Mobile PPOB Multi Layanan",
     date: "Juli 2022 - Sept 2023",
-    tech: [Tech.axios, Tech.typescript, Tech.reactnative],
-    desc: "Mobile Developer - PT. Ide Kreatif Asia",
-    fiture: [
-      "Top Up, Withdraw, Transfer Saldo",
-      "Pembelian Pulsa",
-      "Top Up E-Wallet (Ovo, Dana, Gopay, ShopeePay)",
-      "Pembelian Token Listrik",
-      "Pembayaran Tagihan (PDAM, PLN, BPJS)",
-      "Pembelian Tiket (Pesawat, Kereta Api, Bioskop, Hotel)",
-      "Share Refferal Link",
-      "Multi Platform",
-    ],
+    role: "Mobile Developer",
+    company: "PT. Ide Kreatif Asia",
+    professional: true,
     pin: true,
-    description:
-      "Aplikasi mobile PPOB multi layanan yang menyediakan berbagai transaksi digital seperti pembayaran tagihan, top-up, dan pembelian tiket secara real-time.",
+    tech: [Tech.reactnative, Tech.typescript, Tech.axios],
+    whatIDid: [
+      "Mengembangkan fitur transaksi PPOB seperti pulsa, e-wallet, dan pembayaran tagihan",
+      "Integrasi API transaksi real-time dan penanganan error",
+      "Optimasi performa dan user experience aplikasi",
+    ],
+    impact:
+      "Mempermudah pengguna melakukan berbagai transaksi digital dalam satu aplikasi secara cepat dan aman.",
   },
   {
-    name: "PWA (Progressive Web App) Multi Level Marketing",
+    name: "PWA Multi Level Marketing",
     date: "2023",
-    tech: [Tech.axios, Tech.typescript, Tech.react, Tech.nextjs, Tech.tailwind],
-    desc: "Frontend Developer - PT. Ide Kreatif Asia",
-    fiture: [
-      "PWA (Progressive Web App)",
-      "Multi Level Marketing",
-      "Share Refferal Link",
-      "SEO Friendly",
-    ],
-    description:
-      "PWA untuk sistem Multi Level Marketing dengan fitur referral link dan dashboard penjualan, dioptimalkan untuk performa dan SEO.",
+    role: "Frontend Developer",
+    company: "PT. Ide Kreatif Asia",
+    professional: true,
     pin: true,
+    tech: [Tech.react, Tech.nextjs, Tech.typescript, Tech.tailwind],
+    whatIDid: [
+      "Membangun PWA dengan performa tinggi dan dukungan offline",
+      "Mengembangkan sistem referral dan dashboard penjualan",
+      "Optimasi SEO dan struktur halaman",
+    ],
+    impact:
+      "Meningkatkan aksesibilitas sistem MLM melalui web dan mobile dengan performa cepat dan SEO-friendly.",
   },
   {
-    name: "Web ERP (Smart Inventory) untuk perusahaan pertambangan nikel",
+    name: "Web ERP (Smart Inventory) Perusahaan Pertambangan Nikel",
     date: "2023",
-    tech: [Tech.axios, Tech.typescript, Tech.react, Tech.nextjs, Tech.tailwind],
-    desc: "PT. Unity Nickel Allow",
-    fiture: [
-      "Sales",
-      "Purchasing",
-      "Accounting",
-      "Warehouse",
-      "Document Beacukai",
-      "Report Beacukai",
-      "Report Inventory",
-      "Report Sales",
-      "Report Purchasing",
-      "Report Accounting",
-      "dan Lainnya",
-    ],
+    role: "Fullstack Developer",
+    company: "PT. Unity Nickel Allow",
+    professional: false,
     pin: true,
-    description:
-      "Sistem ERP komprehensif untuk perusahaan pertambangan yang mencakup modul logistik, purchasing, accounting, dan pelaporan bea cukai.",
+    tech: [Tech.react, Tech.nextjs, Tech.typescript, Tech.tailwind],
+    whatIDid: [
+      "Mengembangkan modul Sales, Purchasing, Warehouse, dan Accounting",
+      "Membangun laporan inventory dan dokumen bea cukai",
+      "Menerapkan role-based access sesuai struktur perusahaan",
+    ],
+    impact:
+      "Proses operasional dan pelaporan perusahaan menjadi terpusat dan lebih terkontrol.",
   },
   {
     name: "Sistem Informasi Akademik Kampus (SIAKAD)",
     date: "Apr 2024 - Jan 2025",
+    role: "Fullstack Developer",
+    company: "PT. Benteng Informatika Indonesia",
+    professional: false,
+    pin: true,
     tech: [
-      Tech.axios,
-      Tech.typescript,
       Tech.react,
       Tech.nextjs,
-      Tech.tailwind,
-      Tech.mysql,
-      Tech.prisma,
       Tech.nodejs,
-      Tech.express,
+      Tech.prisma,
       Tech.docker,
+      Tech.mysql,
     ],
-    desc: "PT. BENTENG INFORMATIKA INDONESIA - Fullstack Developer",
-    fiture: [
-      "Dashboard Admin, Dosen, Mahasiswa",
-      "Manajemen Mata Kuliah",
-      "KRS Online",
-      "Presensi Online dengan QR Code",
-      "Penilaian Online",
-      "Transkrip Nilai Otomatis",
-      "integrasi dengan NEOFEEDER",
-      "dan Lainnya",
+    whatIDid: [
+      "Mengembangkan sistem KRS, presensi QR, penilaian, dan transkrip otomatis",
+      "Integrasi dengan NEOFEEDER",
+      "Membangun backend terstruktur dan scalable",
     ],
-    pin: true,
-    description:
-      "Sistem akademik terintegrasi yang mengelola seluruh aktivitas perkuliahan mulai dari KRS, presensi, penilaian, hingga integrasi dengan NEOFEEDER.",
+    impact:
+      "Digitalisasi penuh proses akademik dan pengurangan beban administrasi kampus.",
   },
   {
-    name: "Web Online Shop Fashion",
+    name: "Web Online Shop Fashion & POS Integration",
     date: "2024",
+    role: "Fullstack Developer",
+    professional: false,
+    pin: false,
     tech: [Tech.php, Tech.mysql, Tech.tailwind],
-    desc: "Freelance Web Developer",
-    fiture: [
-      "Produk Fashion",
-      "Kategori Produk",
-      "Keranjang Belanja",
-      "Checkout & Payment Gateway",
-      "Dashboard Admin",
-      "Report Penjualan",
+    whatIDid: [
+      "Membangun sistem kasir (POS) untuk transaksi penjualan di toko offline",
+      "Memimpin tim kecil (2 programmer) dalam merancang arsitektur sistem onlineshop terintegrasi POS untuk sinkronisasi inventaris real-time.",
+      "Menyediakan dashboard admin untuk pengelolaan produk, pesanan, dan laporan penjualan",
     ],
-    description:
-      "Website e-commerce untuk toko fashion dengan sistem katalog produk, keranjang belanja, dan integrasi payment gateway.",
+    impact:
+      "Membantu pemilik usaha mengelola penjualan online dan offline dalam satu sistem terintegrasi dengan data stok dan transaksi yang sinkron.",
   },
   {
     name: "Web Undangan Digital",
     date: "2023",
-    tech: [
-      Tech.axios,
-      Tech.typescript,
-      Tech.react,
-      Tech.nextjs,
-      Tech.tailwind,
-      Tech.zustand,
-      Tech.framermotion,
-    ],
-    desc: "Freelance Frontend Developer",
-    fiture: [
-      "Undangan Digital",
-      "Dinamic Template",
-      "Dashboard, Edit Template Undangan",
-      "Payment Gateway",
-      "dan Lainnya",
-    ],
+    professional: false,
+    pin: false,
+    tech: [Tech.react, Tech.nextjs, Tech.typescript],
     description:
-      "Platform pembuatan undangan digital dengan template dinamis dan integrasi payment gateway untuk pelanggan premium.",
+      "Platform pembuatan undangan digital dengan template dinamis dan sistem pembayaran.",
   },
   {
-    name: "Web Sistem Informasi Geografis, Wisata Alam",
+    name: "Web GIS Wisata Alam",
     date: "2024",
-    tech: [
-      Tech.axios,
-      Tech.react,
-      Tech.nextjs,
-      Tech.typescript,
-      Tech.tailwind,
-      Tech.zustand,
-      Tech.googlemap,
-      Tech.strapi,
-    ],
-    desc: "Freelance Frontend Developer",
-    fiture: ["GIS wisata", "Blog", "Comment & Rating Wisata"],
+    professional: false,
+    pin: false,
+    tech: [Tech.react, Tech.nextjs, Tech.googlemap, Tech.strapi],
     description:
-      "Aplikasi GIS interaktif untuk menampilkan lokasi wisata alam dengan fitur ulasan dan penilaian pengguna.",
+      "Aplikasi peta interaktif untuk menampilkan lokasi wisata alam beserta ulasan pengguna.",
   },
   {
-    name: "Aplikasi Sales Berbasis Android",
+    name: "Aplikasi Sales Android",
     date: "2023",
-    tech: [
-      Tech.axios,
-      Tech.reactnative,
-      Tech.typescript,
-      Tech.tailwind,
-      Tech.zustand,
-      Tech.strapi,
-    ],
-    desc: "Freelance Fullstack Developer",
-    fiture: [
-      "Target Penjualan",
-      "Laporan Penjualan",
-      "Aplikasi Sales",
-      "Aplikasi Pimpinan",
-      "Aplikasi Admin",
-    ],
+    professional: false,
+    pin: false,
+    tech: [Tech.reactnative, Tech.typescript],
     description:
-      "Aplikasi mobile untuk mengelola aktivitas sales harian, laporan penjualan, dan dashboard pemantauan bagi pimpinan dan admin.",
+      "Aplikasi mobile untuk pencatatan dan monitoring aktivitas penjualan lapangan.",
   },
   {
-    name: "Aplikasi Sistem Pengataran Obat pada rumah sakit (SIPRO) berbasis Android",
+    name: "Aplikasi Sistem Pengantaran Obat Rumah Sakit (SIPRO)",
     date: "2023",
-    tech: [
-      Tech.axios,
-      Tech.react,
-      Tech.nextjs,
-      Tech.typescript,
-      Tech.tailwind,
-      Tech.zustand,
-      Tech.laravel,
-      Tech.mysql,
-    ],
-    desc: "Freelance Fullstack Developer, RSUD Siwa Kab. Wajo, Sulawesi Selatan",
-    fiture: [
-      "Aplikasi aptoker",
-      "Aplikasi admin",
-      "Aplikasi pasien",
-      "Integrasi dengan aplikasi rumah sakit",
-      "Tracking status pengantaran",
-    ],
+    role: "Fullstack Developer",
+    company: "RSUD Siwa Kab. Wajo",
+    professional: false,
     pin: true,
-    description:
-      "Aplikasi rumah sakit untuk memantau proses pengantaran obat dari apotek ke pasien secara real-time dengan integrasi sistem internal.",
+    tech: [Tech.reactnative, Tech.laravel, Tech.mysql],
+    whatIDid: [
+      "Mengembangkan aplikasi untuk apoteker, admin, dan pasien",
+      "Integrasi dengan sistem rumah sakit",
+      "Membangun fitur tracking pengantaran obat",
+    ],
+    impact: "Proses pengantaran obat menjadi lebih transparan dan terkontrol.",
   },
   {
-    name: "PWA POS (Point of Sale) & Inventory Management System",
+    name: "POS & Inventory Management System",
     date: "2023",
-    tech: [
-      Tech.react,
-      Tech.nextjs,
-      Tech.typescript,
-      Tech.tailwind,
-      Tech.zustand,
-      Tech.mysql,
-      Tech.prisma,
+    role: "Fullstack Developer",
+    company: "Tk. Bandung Motor",
+    professional: false,
+    pin: false,
+    tech: [Tech.react, Tech.nextjs, Tech.typescript, Tech.prisma, Tech.mysql],
+    whatIDid: [
+      "Mengembangkan sistem POS dan manajemen inventori berbasis PWA",
+      "Merancang arsitektur multi-toko dalam satu sistem terpusat",
+      "Menyediakan dashboard terpisah untuk owner, admin, gudang, dan kasir",
+      "Membangun laporan penjualan dan mutasi stok secara real-time",
     ],
-    desc: "Freelance, Tk. Bandung Motor, Mamuju, Sulawesi Barat",
-    fiture: [
-      "Kasir Dashboard",
-      "Owner Dashboard",
-      "Admin Dashboard",
-      "Gudang Dashboard",
-      "Manajemen Stok",
-      "Multiple Toko",
-      "Report Penjualan",
-      "Report Mutasi",
-      "Transfer Barang",
-    ],
-    description:
-      "Aplikasi POS berbasis web dengan fitur manajemen stok, transaksi multi-toko, dan laporan penjualan yang terintegrasi.",
+    impact:
+      "Sistem telah digunakan secara aktif oleh 5 toko untuk mengelola transaksi dan stok harian secara terpusat.",
   },
   {
-    name: "Landing Page and Booking System for Barber Shop",
+    name: "Landing Page & Booking System Barber Shop",
     date: "2024",
-    tech: [
-      Tech.react,
-      Tech.nextjs,
-      Tech.typescript,
-      Tech.tailwind,
-      Tech.zustand,
-    ],
-    desc: "Freelance Fullstack Developer, Goodcut Barber Shop, Makassar",
-    fiture: [
-      "Landing Page",
-      "Layanan dan Harga",
-      "Booking System",
-      "Testimonial",
-      "SEO Friendly",
-    ],
+    role: "Frontend / Fullstack Developer",
+    company: "Goodcut Barber Shop",
+    professional: false,
     pin: true,
-    description:
-      "Website interaktif untuk barbershop yang menampilkan layanan, harga, dan sistem pemesanan jadwal online dengan tampilan modern.",
+    tech: [Tech.react, Tech.nextjs, Tech.typescript, Tech.tailwind],
+    whatIDid: [
+      "Membangun landing page dengan fokus performa dan SEO",
+      "Mengembangkan sistem booking jadwal online",
+      "Optimasi tampilan mobile dan user experience",
+    ],
+    impact:
+      "Meningkatkan profesionalitas bisnis dan memudahkan pelanggan melakukan booking.",
   },
 ];
 
 function SectionProject() {
-  const [totalShow, setTotalShow] = useState(6);
+  const professionalExperiences = experiences.filter(
+    (item) => item.professional
+  );
+  const freelanceExperiences = experiences.filter((item) => !item.professional);
 
-  function showAll() {
-    setTotalShow(experiences.length);
+  // Hitung jumlah item yang dipin di freelance
+  const pinnedFreelanceCount = freelanceExperiences.filter(
+    (item) => item.pin
+  ).length;
+
+  // State awal menampilkan sejumlah item yang dipin (minimal 6 jika sedikit yang dipin)
+  const initialShowCount = pinnedFreelanceCount > 0 ? pinnedFreelanceCount : 6;
+  const [totalShowFreelance, setTotalShowFreelance] =
+    useState(initialShowCount);
+
+  function showAllFreelance() {
+    setTotalShowFreelance(freelanceExperiences.length);
   }
+
+  const sortExperiences = (data: IExperience[]) => {
+    return data.sort((a, b) => {
+      // 1. Prioritas item yang dipin
+      const aPin = a.pin || false;
+      const bPin = b.pin || false;
+      if (aPin && !bPin) return -1;
+      if (!aPin && bPin) return 1;
+
+      // 2. Prioritas item yang memiliki 'whatIDid' (lebih detail)
+      const aHasDetail = a.whatIDid && a.whatIDid.length > 0;
+      const bHasDetail = b.whatIDid && b.whatIDid.length > 0;
+      if (aHasDetail && !bHasDetail) return -1;
+      if (!aHasDetail && bHasDetail) return 1;
+
+      // 3. Urutkan berdasarkan tanggal (descending)
+      if (a.date > b.date) return -1;
+      if (a.date < b.date) return 1;
+      return 0;
+    });
+  };
+
   return (
     <section
       id="project"
       className="bg-dasar rounded-2xl px-5 py-4 flex flex-col gap-3 z-10"
     >
-      <div className="flex justify-between items-start mb-4 py-4 sticky top-0  bg-dasar z-10">
-        <HeadingSection>Pengalaman Kerja / Project</HeadingSection>
+      {/* Professional Experience */}
+      <div className="flex justify-between items-start mb-4 py-4 sticky top-0 bg-dasar z-10">
+        <HeadingSection>Pengalaman Kerja (Fulltime)</HeadingSection>
       </div>
       <div
         className={twMerge(
           "grid md:grid-cols-2 gap-3 transition-all duration-1000"
         )}
       >
-        {experiences
-          .sort((a, b) => {
-            if (a.date > b.date) return -1;
-            if (a.date < b.date) return 1;
-            return 0;
-          })
-          .sort((a, b) => {
-            if (a.pin && !b.pin) return -1;
-            if (!a.pin && b.pin) return 1;
-            return 0;
-          })
-          .slice(0, totalShow)
+        {sortExperiences([...professionalExperiences]).map((item, index) => (
+          <CardIDo key={index} {...item} />
+        ))}
+      </div>
+
+      {/* Freelance & Contract Projects */}
+      <div className="flex justify-between items-start mb-4 py-4 sticky top-0 bg-dasar z-10 mt-8">
+        <HeadingSection>Proyek Freelance & Kontrak</HeadingSection>
+      </div>
+      <div
+        className={twMerge(
+          "grid md:grid-cols-2 gap-3 transition-all duration-1000"
+        )}
+      >
+        {sortExperiences([...freelanceExperiences])
+          .slice(0, totalShowFreelance)
           .map((item, index) => (
             <CardIDo key={index} {...item} />
           ))}
       </div>
-      {totalShow !== experiences.length && (
+      {totalShowFreelance < freelanceExperiences.length && (
         <div className="flex justify-center">
           <button
-            onClick={showAll}
+            onClick={showAllFreelance}
             className="bg-white px-2 py-1 rounded text-black text-sm"
           >
             Lainnya
           </button>
         </div>
       )}
-      <div className=" sticky top-[70px]  z-10 bg-dasar space-y-4">
-        <SubHeadingSection>Tools</SubHeadingSection>
-        <p className="text-white font-light">
-          Beberapa bahasa, framework dan alat yang pernah saya gunakan dalam
-          mengembangkan project
-        </p>
-        <div className="flex flex-wrap gap-3">
-          <Image
-            src="/image/toolkit/html.png"
-            width={64}
-            height={64}
-            alt="html"
-          />
-          <Image
-            src="/image/toolkit/css.png"
-            width={64}
-            height={64}
-            alt="css"
-          />
-          <Image
-            src="/image/toolkit/javascript.png"
-            width={64}
-            height={64}
-            alt="javascript"
-          />
-          <Image
-            src="/image/toolkit/typescript.png"
-            width={64}
-            height={64}
-            alt="typescript"
-          />
-          <Image
-            src="/image/toolkit/react.png"
-            width={64}
-            height={64}
-            alt="react"
-          />
-          <Image
-            src="/image/toolkit/next-js.png"
-            width={64}
-            height={64}
-            alt="next-js"
-          />
-          <Image
-            src="/image/toolkit/tailwind.png"
-            width={64}
-            height={64}
-            alt="tailwind"
-          />
-          <Image
-            src="/image/toolkit/figma.png"
-            width={64}
-            height={64}
-            alt="figma"
-          />
-          <Image
-            src="/image/toolkit/git.png"
-            width={64}
-            height={64}
-            alt="git"
-          />
-          <Image
-            src="/image/toolkit/expo.png"
-            width={64}
-            height={64}
-            alt="expo"
-          />
-          <Image
-            src="/image/toolkit/express-js.png"
-            width={64}
-            height={64}
-            alt="express-js"
-          />
-          <Image
-            src="/image/toolkit/laravel.png"
-            width={64}
-            height={64}
-            alt="laravel"
-          />
-          <Image
-            src="/image/toolkit/prisma.png"
-            width={64}
-            height={64}
-            alt="prisma"
-          />
-          <Image
-            src="/image/toolkit/boostrap.png"
-            width={64}
-            height={64}
-            alt="boostrap"
-          />
-          <Image
-            src="/image/toolkit/mysql.png"
-            width={64}
-            height={64}
-            alt="mysql"
-          />
-          <Image
-            src="/image/toolkit/php.png"
-            width={64}
-            height={64}
-            alt="php"
-          />
-          <Image
-            src="/image/toolkit/redux.png"
-            width={64}
-            height={64}
-            alt="redux"
-          />
-          <Image
-            src="/image/toolkit/axios.png"
-            width={64}
-            height={64}
-            alt="axios"
-          />
-          <Image
-            src="/image/toolkit/docker.png"
-            width={64}
-            height={64}
-            alt="docker"
-          />
+      <div className="sticky top-[70px] z-10 bg-dasar space-y-6 mt-8">
+        <div>
+          <SubHeadingSection>Tools & Skills</SubHeadingSection>
+          <p className="text-white font-light mt-2">
+            Beberapa bahasa, framework dan alat yang saya gunakan dalam
+            pengembangan
+          </p>
+        </div>
+
+        <div className="space-y-6">
+          {/* Frontend */}
+          <div>
+            <h4 className="text-white font-medium mb-3 border-b border-white/10 pb-1 inline-block text-sm uppercase tracking-wider text-blue-2">
+              Frontend Development
+            </h4>
+            <div className="flex flex-wrap gap-4">
+              {frontendTools.map((tool, index) => (
+                <div key={index} className="flex flex-col items-center gap-1">
+                  <Image
+                    src={tool.icon}
+                    width={48}
+                    height={48}
+                    alt={tool.name}
+                  />
+                  <span className="text-xs text-white/70">{tool.name}</span>
+                </div>
+              ))}
+            </div>
+          </div>
+
+          {/* Backend */}
+          <div>
+            <h4 className="text-white font-medium mb-3 border-b border-white/10 pb-1 inline-block text-sm uppercase tracking-wider text-blue-2">
+              Backend & Database
+            </h4>
+            <div className="flex flex-wrap gap-4">
+              {backendTools.map((tool, index) => (
+                <div key={index} className="flex flex-col items-center gap-1">
+                  <Image
+                    src={tool.icon}
+                    width={48}
+                    height={48}
+                    alt={tool.name}
+                  />
+                  <span className="text-xs text-white/70">{tool.name}</span>
+                </div>
+              ))}
+            </div>
+          </div>
+
+          {/* Mobile */}
+          <div>
+            <h4 className="text-white font-medium mb-3 border-b border-white/10 pb-1 inline-block text-sm uppercase tracking-wider text-blue-2">
+              Mobile Development
+            </h4>
+            <div className="flex flex-wrap gap-4">
+              {mobileTools.map((tool, index) => (
+                <div key={index} className="flex flex-col items-center gap-1">
+                  <Image
+                    src={tool.icon}
+                    width={48}
+                    height={48}
+                    alt={tool.name}
+                  />
+                  <span className="text-xs text-white/70">{tool.name}</span>
+                </div>
+              ))}
+            </div>
+          </div>
+
+          {/* Others */}
+          <div>
+            <h4 className="text-white font-medium mb-3 border-b border-white/10 pb-1 inline-block text-sm uppercase tracking-wider text-blue-2">
+              Tools & DevOps
+            </h4>
+            <div className="flex flex-wrap gap-4">
+              {devopsTools.map((tool, index) => (
+                <div key={index} className="flex flex-col items-center gap-1">
+                  <Image
+                    src={tool.icon}
+                    width={48}
+                    height={48}
+                    alt={tool.name}
+                  />
+                  <span className="text-xs text-white/70">{tool.name}</span>
+                </div>
+              ))}
+            </div>
+          </div>
         </div>
       </div>
     </section>

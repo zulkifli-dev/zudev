@@ -4,7 +4,7 @@ import { twMerge } from "tailwind-merge";
 function Button({
   className,
   ...props
-}: LinkHTMLAttributes<HTMLAnchorElement>) {
+}: LinkHTMLAttributes<HTMLAnchorElement> & { target?: string }) {
   return (
     <a
       href={props.href || ""}
