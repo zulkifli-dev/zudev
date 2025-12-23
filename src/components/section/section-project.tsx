@@ -367,7 +367,7 @@ function SectionProject() {
         <div className="space-y-6">
           {/* Frontend */}
           <div>
-            <h4 className="text-white font-medium mb-3 border-b border-white/10 pb-1 inline-block text-sm uppercase tracking-wider text-blue-2">
+            <h4 className="font-medium mb-3 border-b border-white/10 pb-1 inline-block text-sm uppercase tracking-wider text-blue-2">
               Frontend Development
             </h4>
             <div className="flex flex-wrap gap-4">
@@ -387,7 +387,7 @@ function SectionProject() {
 
           {/* Backend */}
           <div>
-            <h4 className="text-white font-medium mb-3 border-b border-white/10 pb-1 inline-block text-sm uppercase tracking-wider text-blue-2">
+            <h4 className="font-medium mb-3 border-b border-white/10 pb-1 inline-block text-sm uppercase tracking-wider text-blue-2">
               Backend & Database
             </h4>
             <div className="flex flex-wrap gap-4">
@@ -407,7 +407,7 @@ function SectionProject() {
 
           {/* Mobile */}
           <div>
-            <h4 className="text-white font-medium mb-3 border-b border-white/10 pb-1 inline-block text-sm uppercase tracking-wider text-blue-2">
+            <h4 className="font-medium mb-3 border-b border-white/10 pb-1 inline-block text-sm uppercase tracking-wider text-blue-2">
               Mobile Development
             </h4>
             <div className="flex flex-wrap gap-4">
@@ -427,7 +427,7 @@ function SectionProject() {
 
           {/* Others */}
           <div>
-            <h4 className="text-white font-medium mb-3 border-b border-white/10 pb-1 inline-block text-sm uppercase tracking-wider text-blue-2">
+            <h4 className="font-medium mb-3 border-b border-white/10 pb-1 inline-block text-sm uppercase tracking-wider text-blue-2">
               Tools & DevOps
             </h4>
             <div className="flex flex-wrap gap-4">
