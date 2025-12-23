@@ -105,7 +105,7 @@ function CardIDo(props: IExperience) {
           <div className="bg-blue-2/10 backdrop-blur-sm p-3 rounded-lg border-l-2 border-blue-2">
             <p className="text-xs font-semibold text-blue-2 mb-1">Impact:</p>
             <p className="text-xs text-gray-300 italic leading-relaxed">
-              "{props.impact}"
+              &ldquo;{props.impact}&rdquo;
             </p>
           </div>
         )}
