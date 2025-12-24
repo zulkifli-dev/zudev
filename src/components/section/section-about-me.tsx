@@ -13,7 +13,9 @@ function SectionAboutMe() {
     >
       <div className="flex justify-between items-start mb-4 bg-dasar py-4 sticky top-0 z-50">
         <HeadingSection>Tentang Saya</HeadingSection>
-        <Button className="min-w-[120px]">Download CV</Button>
+        <Button className="min-w-[120px]" href="/cv-zulkifli.pdf" download>
+          Download CV
+        </Button>
       </div>
       <p className="text-white text-base font-light">
         Saya adalah Full Stack Developer yang berfokus pada pengembangan sistem

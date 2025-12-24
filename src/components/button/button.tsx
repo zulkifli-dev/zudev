@@ -1,10 +1,10 @@
-import { LinkHTMLAttributes } from "react";
+import { AnchorHTMLAttributes } from "react";
 import { twMerge } from "tailwind-merge";
 
 function Button({
   className,
   ...props
-}: LinkHTMLAttributes<HTMLAnchorElement> & { target?: string }) {
+}: AnchorHTMLAttributes<HTMLAnchorElement> & { target?: string }) {
   return (
     <a
       href={props.href || ""}
