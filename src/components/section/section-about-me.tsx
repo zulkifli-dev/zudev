@@ -38,7 +38,7 @@ function SectionAboutMe() {
         <HeadingSection>Tentang Saya</HeadingSection>
         <Dialog open={open} onOpenChange={setOpen}>
           <DialogTrigger asChild>
-            <button className="min-w-[120px] bg-slate-800 hover:bg-slate-700 text-white px-4 py-2 rounded-md transition-colors">
+            <button className="min-w-[120px] bg-green-600 hover:bg-green-700 text-white px-4 py-2 rounded-md transition-colors">
               Download CV
             </button>
           </DialogTrigger>
@@ -52,13 +52,13 @@ function SectionAboutMe() {
             <div className="flex flex-col gap-3 mt-4">
               <button
                 onClick={() => handleDownload("id")}
-                className="w-full bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-md transition-colors font-medium"
+                className="w-full bg-gradient-to-bl from-blue-1 to-blue-2 hover:from-blue-2 hover:to-blue-2 text-white px-6 py-3 rounded-md transition-all font-medium"
               >
                 Bahasa Indonesia
               </button>
               <button
                 onClick={() => handleDownload("en")}
-                className="w-full bg-green-600 hover:bg-green-700 text-white px-6 py-3 rounded-md transition-colors font-medium"
+                className="w-full bg-white hover:bg-gray-100 text-blue-2 px-6 py-3 rounded-md transition-colors font-medium"
               >
                 Bahasa Inggris
               </button>

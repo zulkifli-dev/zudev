@@ -380,16 +380,21 @@ function SectionProject() {
             <h4 className="font-medium mb-3 border-b border-white/10 pb-1 inline-block text-sm uppercase tracking-wider text-blue-2">
               Frontend Development
             </h4>
-            <div className="flex flex-wrap gap-4">
+            <div className="flex flex-wrap gap-3">
               {frontendTools.map((tool, index) => (
-                <div key={index} className="flex flex-col items-center gap-1">
-                  <Image
-                    src={tool.icon}
-                    width={48}
-                    height={48}
-                    alt={tool.name}
-                  />
-                  <span className="text-xs text-white/70">{tool.name}</span>
+                <div key={index} className="flex flex-col items-center gap-2">
+                  <div className="bg-white rounded-lg p-2 w-14 h-14 flex items-center justify-center">
+                    <Image
+                      src={tool.icon}
+                      width={40}
+                      height={40}
+                      alt={tool.name}
+                      className="object-contain"
+                    />
+                  </div>
+                  <span className="text-xs text-white/70 text-center max-w-[56px]">
+                    {tool.name}
+                  </span>
                 </div>
               ))}
             </div>
@@ -400,16 +405,21 @@ function SectionProject() {
             <h4 className="font-medium mb-3 border-b border-white/10 pb-1 inline-block text-sm uppercase tracking-wider text-blue-2">
               Backend & Database
             </h4>
-            <div className="flex flex-wrap gap-4">
+            <div className="flex flex-wrap gap-3">
               {backendTools.map((tool, index) => (
-                <div key={index} className="flex flex-col items-center gap-1">
-                  <Image
-                    src={tool.icon}
-                    width={48}
-                    height={48}
-                    alt={tool.name}
-                  />
-                  <span className="text-xs text-white/70">{tool.name}</span>
+                <div key={index} className="flex flex-col items-center gap-2">
+                  <div className="bg-white rounded-lg p-2 w-14 h-14 flex items-center justify-center">
+                    <Image
+                      src={tool.icon}
+                      width={40}
+                      height={40}
+                      alt={tool.name}
+                      className="object-contain"
+                    />
+                  </div>
+                  <span className="text-xs text-white/70 text-center max-w-[56px]">
+                    {tool.name}
+                  </span>
                 </div>
               ))}
             </div>
@@ -420,16 +430,21 @@ function SectionProject() {
             <h4 className="font-medium mb-3 border-b border-white/10 pb-1 inline-block text-sm uppercase tracking-wider text-blue-2">
               Mobile Development
             </h4>
-            <div className="flex flex-wrap gap-4">
+            <div className="flex flex-wrap gap-3">
               {mobileTools.map((tool, index) => (
-                <div key={index} className="flex flex-col items-center gap-1">
-                  <Image
-                    src={tool.icon}
-                    width={48}
-                    height={48}
-                    alt={tool.name}
-                  />
-                  <span className="text-xs text-white/70">{tool.name}</span>
+                <div key={index} className="flex flex-col items-center gap-2">
+                  <div className="bg-white rounded-lg p-2 w-14 h-14 flex items-center justify-center">
+                    <Image
+                      src={tool.icon}
+                      width={40}
+                      height={40}
+                      alt={tool.name}
+                      className="object-contain"
+                    />
+                  </div>
+                  <span className="text-xs text-white/70 text-center max-w-[56px]">
+                    {tool.name}
+                  </span>
                 </div>
               ))}
             </div>
@@ -440,16 +455,21 @@ function SectionProject() {
             <h4 className="font-medium mb-3 border-b border-white/10 pb-1 inline-block text-sm uppercase tracking-wider text-blue-2">
               Tools & DevOps
             </h4>
-            <div className="flex flex-wrap gap-4">
+            <div className="flex flex-wrap gap-3">
               {devopsTools.map((tool, index) => (
-                <div key={index} className="flex flex-col items-center gap-1">
-                  <Image
-                    src={tool.icon}
-                    width={48}
-                    height={48}
-                    alt={tool.name}
-                  />
-                  <span className="text-xs text-white/70">{tool.name}</span>
+                <div key={index} className="flex flex-col items-center gap-2">
+                  <div className="bg-white rounded-lg p-2 w-14 h-14 flex items-center justify-center">
+                    <Image
+                      src={tool.icon}
+                      width={40}
+                      height={40}
+                      alt={tool.name}
+                      className="object-contain"
+                    />
+                  </div>
+                  <span className="text-xs text-white/70 text-center max-w-[56px]">
+                    {tool.name}
+                  </span>
                 </div>
               ))}
             </div>
