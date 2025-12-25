@@ -19,15 +19,24 @@ const frontendTools: ToolItem[] = [
   { name: "React", icon: "/image/toolkit/react.png" },
   { name: "Next.js", icon: "/image/toolkit/next-js.png" },
   { name: "Tailwind", icon: "/image/toolkit/tailwind.png" },
+  { name: "Bootstrap", icon: "/image/toolkit/boostrap.png" },
   { name: "Redux", icon: "/image/toolkit/redux.png" },
+  { name: "Zustand", icon: "/image/toolkit/zustand.png" },
+  { name: "React Query", icon: "/image/toolkit/react-query.webp" },
+  { name: "SWR", icon: "/image/toolkit/swr.webp" },
   { name: "Axios", icon: "/image/toolkit/axios.png" },
+  { name: "Trpc", icon: "/image/toolkit/trpc-io.png" },
+  { name: "PWA", icon: "/image/toolkit/pwa.png" },
 ];
 
 const backendTools: ToolItem[] = [
+  { name: "PHP", icon: "/image/toolkit/php.png" },
   { name: "Laravel", icon: "/image/toolkit/laravel.png" },
   { name: "Express.js", icon: "/image/toolkit/express-js.png" },
   { name: "Prisma", icon: "/image/toolkit/prisma.png" },
   { name: "MySQL", icon: "/image/toolkit/mysql.png" },
+  { name: "PostgreSQL", icon: "/image/toolkit/postgresql.png" },
+  { name: "Firebase", icon: "/image/toolkit/firebase.png" },
 ];
 
 const mobileTools: ToolItem[] = [
@@ -37,6 +46,8 @@ const mobileTools: ToolItem[] = [
 const devopsTools: ToolItem[] = [
   { name: "Git", icon: "/image/toolkit/git.png" },
   { name: "Docker", icon: "/image/toolkit/docker.png" },
+  { name: "Nginx", icon: "/image/toolkit/nginx.jpg" },
+  { name: "Turborepo", icon: "/image/toolkit/turborepo.png" },
   { name: "Figma", icon: "/image/toolkit/figma.png" },
 ];
 
@@ -139,7 +150,7 @@ const experiences: IExperience[] = [
   },
   {
     name: "Web ERP (Smart Inventory) Perusahaan Pertambangan Nikel",
-    date: "2023",
+    date: "Oktober 2023 - Maret 2024",
     role: "Fullstack Developer",
     company: "PT. Unity Nickel Allow",
     professional: false,
@@ -155,7 +166,7 @@ const experiences: IExperience[] = [
   },
   {
     name: "Sistem Informasi Akademik Kampus (SIAKAD)",
-    date: "Apr 2024 - Jan 2025",
+    date: "April 2024 - Januari 2025",
     role: "Fullstack Developer",
     company: "PT. Benteng Informatika Indonesia",
     professional: false,
