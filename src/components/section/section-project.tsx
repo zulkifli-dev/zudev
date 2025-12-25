@@ -37,6 +37,8 @@ const backendTools: ToolItem[] = [
   { name: "MySQL", icon: "/image/toolkit/mysql.png" },
   { name: "PostgreSQL", icon: "/image/toolkit/postgresql.png" },
   { name: "Firebase", icon: "/image/toolkit/firebase.png" },
+  { name: "supabase", icon: "/image/toolkit/supabase.png" },
+  { name: "Node.js", icon: "/image/toolkit/nodejs.webp" },
 ];
 
 const mobileTools: ToolItem[] = [
