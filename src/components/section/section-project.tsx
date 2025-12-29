@@ -153,7 +153,7 @@ const experiences: IExperience[] = [
   {
     name: "Web ERP (Smart Inventory) Perusahaan Pertambangan Nikel",
     date: "Oktober 2023 - Maret 2024",
-    role: "Fullstack Developer",
+    role: "Frontend Developer",
     company: "PT. Unity Nickel Allow",
     professional: false,
     pin: true,
